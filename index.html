@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gerardo Palmieri Mondragón — Software Engineer focused on DevOps, cloud infrastructure, automation, and backend development. Explore selected open-source projects.">
+    <meta name="theme-color" content="#101715">
+    <title>Gerardo Palmieri — DevOps & Software Engineer</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./src/styles.css">
+    <script type="module" src="./src/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header wrap">
+      <a class="wordmark" href="#" aria-label="Gerardo Palmieri, home">gp<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> DEVOPS & SOFTWARE ENGINEERING</p>
+          <h1 id="hero-title">Good software.<br>Solid <em>foundations.</em></h1>
+          <p class="intro">I’m Gerardo Palmieri Mondragón. I build backend systems and the infrastructure that supports them — with a focus on automation, clarity, and reliability.</p>
+          <div class="actions">
+            <a class="button" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
+            <a class="text-link" href="https://github.com/palmieridev">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="hero-note">From application code to cloud infrastructure.</p>
+        </div>
+        <div class="system-panel" aria-label="Engineering focus: build, provision, operate">
+          <div class="panel-heading"><span>THE ENGINEERING LOOP</span><span aria-hidden="true">⌘</span></div>
+          <div class="system-step"><span class="step-number">01</span><div><h2>Build</h2><p>APIs & backend systems</p></div><span class="step-symbol" aria-hidden="true">{ }</span></div>
+          <div class="connector" aria-hidden="true"></div>
+          <div class="system-step"><span class="step-number">02</span><div><h2>Provision</h2><p>Declarative infrastructure</p></div><span class="step-symbol" aria-hidden="true">◇</span></div>
+          <div class="connector" aria-hidden="true"></div>
+          <div class="system-step"><span class="step-number">03</span><div><h2>Operate</h2><p>Automation & observability</p></div><span class="step-symbol" aria-hidden="true">⌁</span></div>
+          <div class="panel-footer"><span class="dot" aria-hidden="true"></span> Code → infrastructure → insight</div>
+        </div>
+      </section>
+
+      <div class="stack-strip wrap" aria-label="Core technologies"><span>TOOLS OF THE TRADE</span><p>Go <span>/</span> Python <span>/</span> AWS <span>/</span> Terraform <span>/</span> Kubernetes <span>/</span> Linux</p></div>
+
+      <section class="section wrap" id="work" aria-labelledby="work-title">
+        <div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="work-title">Built to understand.<br>Designed to improve.</h2></div><p>A selection of public projects across infrastructure, cloud security, and backend engineering.</p></div>
+        <div class="projects">
+          <article class="project featured">
+            <div class="project-top"><p class="eyebrow">PLATFORM ENGINEERING</p><span class="project-number">01</span></div>
+            <h3>Homelab infrastructure</h3>
+            <p>A bare-metal Kubernetes lab on Talos Linux, with declarative configuration for networking, persistent storage, DNS, and observability.</p>
+            <div class="architecture" aria-label="Homelab components"><span>Talos / Kubernetes</span><span aria-hidden="true">↓</span><div><span>Networking</span><span>Storage</span><span>Observability</span></div></div>
+            <p class="project-detail">Explore Helmfile releases, Kustomize manifests, and operational runbooks.</p>
+            <ul class="tags" aria-label="Technologies"><li>Kubernetes</li><li>Talos</li><li>Helmfile</li><li>Grafana</li></ul>
+            <a class="project-link" href="https://github.com/palmieridev/homelab">Explore homelab <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="project">
+            <div class="project-top"><p class="eyebrow">FULL-STACK ENGINEERING</p><span class="project-number">02</span></div>
+            <h3>Openlocal</h3>
+            <p>A local-commerce marketplace and store manager, bringing product discovery, public storefronts, and inventory management together for businesses in Mexico.</p>
+            <p class="project-detail">An Astro and TypeScript web frontend backed by a Go/Fiber API, PostgreSQL, typed SQL queries, versioned migrations, and background jobs.</p>
+            <ul class="tags" aria-label="Technologies"><li>Astro</li><li>TypeScript</li><li>Go / Fiber</li><li>PostgreSQL</li><li>Docker</li><li>PGMQ</li></ul>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/palmieridev/openlocal-web">Openlocal web <span aria-hidden="true">↗</span></a>
+              <a class="project-link" href="https://github.com/palmieridev/openlocal-api">Openlocal API <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project-top"><p class="eyebrow">CLOUD SECURITY</p><span class="project-number">03</span></div>
+            <h3>AWS secrets encryption</h3>
+            <p>Modular Terraform configuration connecting KMS, Secrets Manager, encrypted PostgreSQL storage, and IAM policies.</p>
+            <p class="project-detail">A focused exploration of encryption and secrets management as infrastructure code.</p>
+            <ul class="tags" aria-label="Technologies"><li>Terraform</li><li>AWS KMS</li><li>Secrets Manager</li><li>RDS</li></ul>
+            <a class="project-link" href="https://github.com/palmieridev/aws-secrets-encryption">Explore secrets encryption <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="project">
+            <div class="project-top"><p class="eyebrow">IDENTITY & ACCESS</p><span class="project-number">04</span></div>
+            <h3>User Gateway</h3>
+            <p>Identity and API access infrastructure using Cognito, API Gateway, Lambda, and reusable Terraform modules.</p>
+            <p class="project-detail">Separate environment configurations, authentication verification scripts, and infrastructure validation workflows.</p>
+            <ul class="tags" aria-label="Technologies"><li>Terraform</li><li>Cognito</li><li>API Gateway</li><li>Lambda</li></ul>
+            <a class="project-link" href="https://github.com/palmieridev/user-gateway">Explore User Gateway <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+        <a class="text-link all-repos" href="https://github.com/palmieridev?tab=repositories">More experiments & repositories <span aria-hidden="true">↗</span></a>
+      </section>
+
+      <section class="section about wrap" id="about" aria-labelledby="about-title">
+        <div><p class="eyebrow">02 / BEHIND THE CODE</p><h2 id="about-title">Curious about systems.<br>Careful about details.</h2><p>I’m a software engineer focused on cloud engineering, DevOps practices, and Infrastructure as Code. My work connects backend development with the practical challenges of deploying and operating software.</p><p>Linux is my daily environment. Python and Go are my main backend tools. Outside infrastructure, I also explore machine learning, distributed systems, and intelligent automation.</p></div>
+        <dl class="capabilities">
+          <div><dt>Cloud & infrastructure</dt><dd>AWS · Terraform · Ansible · GCP familiarity</dd></div>
+          <div><dt>Delivery & operations</dt><dd>Docker · Kubernetes · GitHub Actions · Linux</dd></div>
+          <div><dt>Backend & data</dt><dd>Go · Python · TypeScript · PostgreSQL · MongoDB</dd></div>
+          <div><dt>Observability</dt><dd>Prometheus · Grafana · Loki</dd></div>
+        </dl>
+      </section>
+
+      <section class="contact wrap" id="contact" aria-labelledby="contact-title">
+        <p class="eyebrow">03 / LET’S CONNECT</p>
+        <h2 id="contact-title">Have something<br>worth <em>building?</em></h2>
+        <p>Let’s talk software, infrastructure, or your next engineering challenge.</p>
+        <a class="button" href="mailto:gerardopalmierimondragon@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+        <a class="contact-email" href="mailto:gerardopalmierimondragon@gmail.com">gerardopalmierimondragon@gmail.com</a>
+      </section>
+    </main>
+    <footer class="wrap"><p>© <span id="year">2026</span> Gerardo Palmieri Mondragón</p><div><a href="https://github.com/palmieridev">GitHub ↗</a><a href="https://www.linkedin.com/in/gerardo-palmieri-mondragon-486485203">LinkedIn ↗</a><a href="#">Back to top ↑</a></div></footer>
+  </body>
+</html>
